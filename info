@@ -1,0 +1,27 @@
+def calculate_flow_rate(area, velocity):
+    """
+    Calculate the flow rate of a well.
+
+    Parameters:
+    - area (float): Cross-sectional area of the well (in square meters).
+    - velocity (float): Velocity of the fluid (in meters per second).
+
+    Returns:
+    - float: Flow rate of the well (in cubic meters per second).
+    """
+    flow_rate = area * velocity
+    return flow_rate
+
+def main():
+    # Get user input for the cross-sectional area and velocity
+    area = float(input("Enter the cross-sectional area of the well (in square meters): "))
+    velocity = float(input("Enter the velocity of the fluid (in meters per second): "))
+
+    # Calculate the flow rate
+    flow_rate = calculate_flow_rate(area, velocity)
+
+    # Display the result
+    print(f"\nThe flow rate of the well is {flow_rate:.2f} cubic meters per second.")
+
+if __name__ == "__main__":
+    main()
